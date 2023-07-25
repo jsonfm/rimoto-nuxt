@@ -1,5 +1,5 @@
 <template>
-    <main>
+    <PanelSideBar>
         <slot />
-    </main>
+    </PanelSideBar>
 </template>

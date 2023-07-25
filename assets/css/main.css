@@ -11,4 +11,13 @@
     .tw-container {
         @apply tw-mx-auto tw-max-w-[1200px] tw-px-4;
     }
+    /* Sidebar */
+    .panel-sidebar-link {
+        @apply tw-px-8 tw-h-12 tw-flex tw-gap-2 tw-items-center tw-cursor-pointer  tw-duration-200 tw-text-white/70;
+    }
+
+    .active.panel-sidebar-link,
+    .panel-sidebar-link:hover {
+        @apply tw-border-l-4 tw-border-white tw-text-white;
+    }
 }
