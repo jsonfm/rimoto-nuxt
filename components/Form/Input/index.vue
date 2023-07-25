@@ -38,9 +38,9 @@ import { ref } from "vue";
 const showPassword = ref(false);
 const toggleShowPassword = () => (showPassword.value = !showPassword.value);
 const className =
-    "tw-w-72 tw-px-4 tw-py-2 tw-rounded-full tw-drop-shadow-sm tw-border tw-outline-none tw-focus:outline tw-focus:outline-primary tw-duration-200 tw-text-black";
+    "tw-drop-shadow-md  tw-w-72 tw-px-4 tw-py-2 tw-rounded-full tw-border tw-outline-none tw-focus:outline tw-focus:outline-primary tw-duration-200 tw-text-black";
 const classNamePassword =
-    "tw-text-primary tw-w-72 tw-flex tw-items-center tw-justify-between tw-outline-none tw-px-4 tw-py-2 tw-rounded-full tw-border tw-focus:border-primary tw-focus:outline tw-focus:outline-primary tw-bg-white";
+    "tw-drop-shadow-md tw-text-primary tw-w-72 tw-flex tw-items-center tw-justify-between tw-outline-none tw-px-4 tw-py-2 tw-rounded-full tw-border tw-focus:border-primary tw-focus:outline tw-focus:outline-primary tw-bg-white";
 
 defineProps<{
     label?: string;
