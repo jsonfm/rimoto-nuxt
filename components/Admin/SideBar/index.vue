@@ -19,8 +19,8 @@
                 />
                 <PanelSideBarLink
                     @click="toggleShowMenu"
-                    to="/admin/experiments"
-                    title="Experimentos"
+                    to="/admin/users"
+                    title="Usuarios"
                     iconName="heroicons-outline:user"
                 />
                 <PanelSideBarLink
