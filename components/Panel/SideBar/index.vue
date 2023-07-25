@@ -4,9 +4,12 @@
             class="tw-fixed md:tw-static tw-top-0 tw-left-0 tw-z-[10000] tw-w-full md:tw-w-1/5 tw-bg-primary tw-text-white tw-h-screen tw-py-12 tw-duration-200 tw-flex tw-flex-col tw-items-center md:tw-items-start"
             :class="[showMenu ? showMenuClassName : '']"
         >
-            <h4 class="tw-text-xl tw-font-bold tw-uppercase tw-mb-8 md:tw-mb-10 tw-px-8 tw-h-[10%] tw-xl:h-[6%]">
-                Laboratorios Remotos
-            </h4>
+            <NuxtLink to="/">
+                <h4 class="tw-text-xl tw-font-bold tw-uppercase tw-mb-8 md:tw-mb-10 tw-px-8 tw-h-[10%] tw-xl:h-[6%]">
+                    Laboratorios Remotos
+                </h4>
+            </NuxtLink>
+
             <div class="tw-flex tw-flex-col tw-items-center md:tw-items-start tw-gap-5 tw-h-[60%] md:tw-h-[80%]">
                 <PanelSideBarLink
                     @click="toggleShowMenu"
@@ -16,20 +19,20 @@
                 />
                 <PanelSideBarLink
                     @click="toggleShowMenu"
-                    to="/panel"
-                    title="Usuarios"
+                    to="/panel/experiments"
+                    title="Experimentos"
                     iconName="heroicons-outline:user"
                 />
                 <PanelSideBarLink
                     @click="toggleShowMenu"
-                    to="/panel"
-                    title="Imágenes"
+                    to="/panel/courses"
+                    title="Cursos"
                     iconName="material-symbols:photo-library-outline-rounded"
                 />
                 <PanelSideBarLink
                     @click="toggleShowMenu"
-                    to="/panel"
-                    title="Instituciones"
+                    to="/panel/exams"
+                    title="Evaluaciones"
                     iconName="heroicons-outline:building-library"
                 />
             </div>
@@ -37,7 +40,7 @@
                 <PanelSideBarLink to="/login" title="Logout" iconName="heroicons-outline:arrow-right-on-rectangle" />
             </div>
         </div>
-        <div class="tw-w-full md:tw-w-4/5 tw-h-screen tw-overflow-x-hidden tw-overflow-y-auto tw-bg-slate-200">
+        <div class="tw-w-full md:tw-w-4/5 tw-h-screen tw-overflow-x-hidden tw-overflow-y-auto">
             <slot />
         </div>
         <div

@@ -16,7 +16,4 @@
             </div>
         </div>
     </section>
-    <section>
-        <div class="tw-container">Container</div>
-    </section>
 </template>
