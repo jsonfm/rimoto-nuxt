@@ -1,6 +1,6 @@
 <template>
     <section>
-        <div class="tw-container tw-pt-20">
+        <div class="tw-container">
             <div class="tw-w-full tw-flex tw-justify-between">
                 <AdminCardKPI variant="primary" :loading="true" />
                 <AdminCardKPI variant="secondary" :loading="true" />
@@ -10,3 +10,9 @@
         </div>
     </section>
 </template>
+
+<script setup lang="ts">
+definePageMeta({
+    layout: "admin",
+});
+</script>

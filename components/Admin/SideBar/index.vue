@@ -1,0 +1,72 @@
+<template>
+    <div class="tw-flex">
+        <div
+            class="tw-fixed md:tw-static tw-top-0 tw-left-0 tw-z-[10000] tw-w-full md:tw-w-1/5 tw-bg-neutral tw-text-white tw-h-screen tw-py-12 tw-duration-200 tw-flex tw-flex-col tw-items-center md:tw-items-start"
+            :class="[showMenu ? showMenuClassName : '']"
+        >
+            <NuxtLink to="/">
+                <h4 class="tw-text-xl tw-font-bold tw-uppercase tw-mb-8 md:tw-mb-10 tw-px-8 tw-h-[10%] tw-xl:h-[6%]">
+                    Admin
+                </h4>
+            </NuxtLink>
+
+            <div class="tw-flex tw-flex-col tw-items-center md:tw-items-start tw-gap-5 tw-h-[60%] md:tw-h-[80%]">
+                <PanelSideBarLink
+                    @click="toggleShowMenu"
+                    to="/admin"
+                    title="Inicio"
+                    iconName="heroicons-outline:home"
+                />
+                <PanelSideBarLink
+                    @click="toggleShowMenu"
+                    to="/admin/experiments"
+                    title="Experimentos"
+                    iconName="heroicons-outline:user"
+                />
+                <PanelSideBarLink
+                    @click="toggleShowMenu"
+                    to="/admin/courses"
+                    title="Cursos"
+                    iconName="material-symbols:photo-library-outline-rounded"
+                />
+                <PanelSideBarLink
+                    @click="toggleShowMenu"
+                    to="/admin/exams"
+                    title="Evaluaciones"
+                    iconName="heroicons-outline:building-library"
+                />
+            </div>
+            <div class="tw-h-[10%]" :click="logout">
+                <PanelSideBarLink to="/login" title="Logout" iconName="heroicons-outline:arrow-right-on-rectangle" />
+            </div>
+        </div>
+        <div class="tw-w-full md:tw-w-4/5 tw-h-screen tw-overflow-x-hidden tw-overflow-y-auto">
+            <PanelHeader />
+            <main class="tw-pt-14">
+                <slot />
+            </main>
+        </div>
+        <div
+            @click="toggleShowMenu"
+            class="tw-fixed tw-bottom-16 tw-right-4 tw-z-[10006] md:tw-hidden tw-bg-primary tw-text-white tw-p-2 tw-rounded-full tw-cursor-pointer tw-hover:scale-105 tw-duration-200"
+            :class="[!showMenu ? 'tw-!bg-white' : '']"
+        >
+            <template v-if="showMenu">
+                <Icon size="24px" name="material-symbols:side-navigation" />
+            </template>
+            <template v-else>
+                <Icon size="28px" name="material-symbols:side-navigation" class="text-primary" />
+            </template>
+        </div>
+    </div>
+</template>
+
+<script setup lang="ts">
+const showMenu = ref(true);
+const toggleShowMenu = () => (showMenu.value = !showMenu.value);
+const showMenuClassName = ref("tw-left-full tw-overflow-hidden");
+
+const logout = () => {
+    navigateTo("/login");
+};
+</script>
