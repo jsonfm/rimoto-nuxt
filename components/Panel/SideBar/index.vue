@@ -41,7 +41,10 @@
             </div>
         </div>
         <div class="tw-w-full md:tw-w-4/5 tw-h-screen tw-overflow-x-hidden tw-overflow-y-auto">
-            <slot />
+            <PanelHeader />
+            <main class="tw-pt-14">
+                <slot />
+            </main>
         </div>
         <div
             @click="toggleShowMenu"
