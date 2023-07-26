@@ -4,7 +4,7 @@
             class="tw-hidden md:tw-flex tw-w-full md:tw-w-1/2 tw-container tw-bg-white tw-text-primary tw-h-screen tw-flex-col tw-items-center tw-justify-center"
         >
             <NuxtLink to="/">
-                <h4 class="tw-text-4xl">Rimoto</h4>
+                <img src="/images/logos/logo-bg-white.jpg" class="tw-h-40 tw-object-contain" />
             </NuxtLink>
         </div>
         <div
