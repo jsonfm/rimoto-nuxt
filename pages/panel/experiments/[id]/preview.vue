@@ -11,6 +11,9 @@
                             repellendus nesciunt, quod assumenda repellat ducimus nam.
                         </p>
                     </div>
+                    <div>
+                        <span className="tw-badge tw-badge-primary">Badge</span>
+                    </div>
                     <div class="tw-mt-4">
                         <NuxtLink :to="experimentURL">
                             <div class="tw-w-48">

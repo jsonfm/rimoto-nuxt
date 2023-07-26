@@ -5,6 +5,7 @@
                 <!-- <div>
                     <input type="search" />
                 </div> -->
+
                 <img src="/images/logos/logo-horizontal.png" class="tw-h-8 md:tw-h-10" />
             </div>
             <div class="tw-flex tw-gap-2 tw-flex-items-center">

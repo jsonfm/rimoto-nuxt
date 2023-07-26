@@ -29,6 +29,13 @@
                     title="Cursos"
                     iconName="material-symbols:photo-library-outline-rounded"
                 />
+
+                <PanelSideBarLink
+                    @click="toggleShowMenu"
+                    to="/admin/experiments"
+                    title="Experimentos"
+                    iconName="heroicons-outline:building-library"
+                />
                 <PanelSideBarLink
                     @click="toggleShowMenu"
                     to="/admin/exams"

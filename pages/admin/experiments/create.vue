@@ -1,8 +1,9 @@
 <template>
     <section>
         <div class="tw-pt-14 tw-min-h-screen tw-px-4 tw-container">
-            <div class="tw-mb-6">Crea un Experimento</div>
-
+            <div>
+                <NuxtLink to="/admin/experiments"> Volver </NuxtLink>
+            </div>
             <div class="tw-flex tw-gap-4 md:tw-gap-8">
                 <div class="tw-w-full md:tw-w-1/2">
                     <div class="tw-flex tw-flex-col tw tw-gap-6">
