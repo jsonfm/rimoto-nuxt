@@ -2,7 +2,7 @@
     <section class="tw-bg-white tw-text-primary">
         <div class="tw-container tw-min-h-screen tw-flex tw-flex-col tw-items-center tw-justify-center">
             <div class="tw-flex tw-flex-col tw-items-center tw-justify-center">
-                <h3 className="tw-text-xl tw-font-bold tw-uppercase md:tw-text-3xl">
+                <h3 className="tw-text-xl tw-font-bold tw-uppercase md:tw-text-3xl tw-text-center">
                     Laboratorios remotos y Virtuales
                 </h3>
                 <h5 className="tw-uppercase md:tw-text-xl tw-animate-slidedown tw-font-[300] tw-mt-2">

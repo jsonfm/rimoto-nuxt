@@ -4,7 +4,7 @@
             class="tw-hidden md:tw-flex tw-w-full md:tw-w-1/2 tw-container tw-bg-white tw-text-primary tw-h-screen tw-flex-col tw-items-center tw-justify-center"
         >
             <NuxtLink to="/">
-                <img src="/images/logos/logo-bg-white.jpg" class="tw-h-40 tw-object-contain" />
+                <img src="/images/logos/logo-bg-white.jpg" class="tw-h-40 tw-object-contain" alt="logo" />
             </NuxtLink>
         </div>
         <div
@@ -12,7 +12,7 @@
         >
             <h4 class="tw-mb-12 tw-uppercase tw-hidden md:tw-flex">Bienvenido</h4>
             <NuxtLink to="/">
-                <img src="/images/logos/logo-white-negative.png" class="tw-h-20 tw-mb-10 md:tw-hidden" />
+                <img src="/images/logos/logo-white-negative.png" class="tw-h-20 tw-mb-10 md:tw-hidden" alt="logo" />
             </NuxtLink>
 
             <form class="tw-flex tw-flex-col tw-gap-5 tw-max-w-[300px]">
@@ -23,7 +23,7 @@
                 </NuxtLink>
             </form>
             <div class="tw-mt-16">
-                <NuxtLink> Forgot your password? </NuxtLink>
+                <NuxtLink to="/password/reset"> Forgot your password? </NuxtLink>
             </div>
         </div>
     </section>
