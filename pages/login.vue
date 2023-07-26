@@ -10,7 +10,11 @@
         <div
             class="tw-w-full md:tw-w-1/2 tw-text-white tw-bg-neutral tw-flex tw-flex-col tw-items-center tw-justify-center tw-h-screen"
         >
-            <h4 class="tw-mb-12 tw-uppercase">Bienvenido</h4>
+            <h4 class="tw-mb-12 tw-uppercase tw-hidden md:tw-flex">Bienvenido</h4>
+            <NuxtLink to="/">
+                <img src="/images/logos/logo-white-negative.png" class="tw-h-20 tw-mb-10 md:tw-hidden" />
+            </NuxtLink>
+
             <form class="tw-flex tw-flex-col tw-gap-5 tw-max-w-[300px]">
                 <FormInput label="Email" type="email" placeholder="example@email.com" />
                 <FormInput label="Password" type="password" placeholder="****" />
