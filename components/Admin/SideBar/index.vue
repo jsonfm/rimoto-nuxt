@@ -1,7 +1,7 @@
 <template>
     <div class="tw-flex">
         <div
-            class="tw-overflow-hidden tw-fixed md:tw-static tw-top-0 tw-left-0 tw-z-[10000] tw-w-full md:tw-w-2/5 xl:tw-w-1/5 tw-bg-primary tw-text-white tw-h-screen tw-py-12 tw-duration-200 tw-flex tw-flex-col tw-items-center md:tw-items-start"
+            class="tw-overflow-hidden tw-fixed md:tw-static tw-top-0 tw-left-0 tw-z-[10000] tw-w-full md:tw-w-2/5 xl:tw-w-1/5 tw-bg-neutral tw-text-white tw-h-screen tw-py-12 tw-duration-200 tw-flex tw-flex-col tw-items-center md:tw-items-start"
             :class="[showMenu ? showMenuClassName : '']"
         >
             <NuxtLink to="/">

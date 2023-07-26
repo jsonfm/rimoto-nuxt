@@ -2,15 +2,30 @@
     <header class="tw-z-[1000]">
         <div class="tw-navbar tw-bg-base-100 tw-drop-shadow-lg">
             <div class="tw-flex-1">
-                <a class="tw-btn tw-btn-ghost tw-normal-case tw-text-xl">Inicio</a>
+                <div>
+                    <input type="search" />
+                </div>
             </div>
-            <div class="tw-flex-none">
+            <div class="tw-flex tw-gap-3 tw-flex-items-center">
+                <div>
+                    <label>
+                        <div
+                            class="tw-w-10 tw-h-10 tw-shadow-xl tw-rounded-full tw-flex tw-items-center tw-justify-center"
+                        >
+                            <Icon name="ic:outline-notifications" :size="22" />
+                        </div>
+                    </label>
+                </div>
                 <div class="tw-dropdown tw-dropdown-end">
-                    <label tabindex="0" class="tw-btn tw-btn-ghost tw-btn-circle tw-avatar">
-                        <div class="tw-w-10 tw-rounded-full">
+                    <label tabindex="0" class="tw-flex tw-items-center tw-gap-4 tw-btn tw-btn-ghost">
+                        <div class="tw-w-10 tw-h-10 tw-rounded-full tw-border-4 tw-border-primary tw-overflow-hidden">
                             <img
                                 src="https://img.freepik.com/premium-vector/muzzle-funny-cute-cat-glasses-vector-flat-illustration-portrait-clever-feline-character-isolated-white-background-avatar-cheerful-furry-domestic-animal-adorable-pet-face_198278-9811.jpg"
+                                class="tw-w-full tw-h-full tw-object-cover"
                             />
+                        </div>
+                        <div class="tw-hidden md:tw-flex">
+                            <p class="tw-font-bold">Robert</p>
                         </div>
                     </label>
                     <ul
