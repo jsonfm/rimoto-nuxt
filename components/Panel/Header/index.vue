@@ -1,5 +1,5 @@
 <template>
-    <header class="">
+    <header class="tw-z-[1000]">
         <div class="tw-navbar tw-bg-base-100 tw-drop-shadow-lg">
             <div class="tw-flex-1">
                 <a class="tw-btn tw-btn-ghost tw-normal-case tw-text-xl">Inicio</a>
@@ -15,7 +15,7 @@
                     </label>
                     <ul
                         tabindex="0"
-                        class="tw-menu tw-menu-sm tw-dropdown-content tw-mt-3 tw-z-[1] tw-p-2 tw-shadow tw-bg-base-100 tw-rounded-box tw-w-52"
+                        class="tw-menu tw-menu-sm tw-dropdown-content tw-mt-3 tw-z-[1000] tw-p-2 tw-shadow tw-bg-base-100 tw-rounded-box tw-w-52"
                     >
                         <li>
                             <a class="justify-between">

@@ -1,7 +1,7 @@
 <template>
     <section>
         <div class="tw-container">
-            <div>list of experiments</div>
+            <div>list of courses</div>
         </div>
     </section>
 </template>

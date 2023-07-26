@@ -1,7 +1,7 @@
 <template>
     <div class="tw-flex">
         <div
-            class="tw-fixed md:tw-static tw-top-0 tw-left-0 tw-z-[10000] tw-w-full md:tw-w-1/5 tw-bg-neutral tw-text-white tw-h-screen tw-py-12 tw-duration-200 tw-flex tw-flex-col tw-items-center md:tw-items-start"
+            class="tw-overflow-hidden tw-fixed md:tw-static tw-top-0 tw-left-0 tw-z-[10000] tw-w-full md:tw-w-2/5 xl:tw-w-1/5 tw-bg-primary tw-text-white tw-h-screen tw-py-12 tw-duration-200 tw-flex tw-flex-col tw-items-center md:tw-items-start"
             :class="[showMenu ? showMenuClassName : '']"
         >
             <NuxtLink to="/">
@@ -48,8 +48,8 @@
         </div>
         <div
             @click="toggleShowMenu"
-            class="tw-fixed tw-bottom-16 tw-right-4 tw-z-[10006] md:tw-hidden tw-bg-primary tw-text-white tw-p-2 tw-rounded-full tw-cursor-pointer tw-hover:scale-105 tw-duration-200"
-            :class="[!showMenu ? 'tw-!bg-white' : '']"
+            class="tw-fixed tw-bottom-16 tw-right-4 tw-z-[10006] md:tw-hidden tw-text-white tw-p-2 tw-rounded-full tw-cursor-pointer tw-hover:scale-105 tw-duration-200"
+            :class="[!showMenu ? 'tw-bg-white' : 'tw-bg-primary']"
         >
             <template v-if="showMenu">
                 <Icon size="24px" name="material-symbols:side-navigation" />

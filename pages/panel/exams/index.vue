@@ -1,8 +1,6 @@
 <template>
     <section>
-        <div class="tw-container">
-            <div>list of experiments</div>
-        </div>
+        <div class="tw-container">list of exams</div>
     </section>
 </template>
 
