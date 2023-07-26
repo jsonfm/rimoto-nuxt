@@ -9,5 +9,5 @@
 
 <script setup lang="ts">
 import { ref } from "vue";
-const experimentURL = ref(`/panel/experiment/2132/preview`);
+const experimentURL = ref(`/panel/experiments/2132/preview`);
 </script>
