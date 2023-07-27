@@ -1,7 +1,7 @@
 <template>
     <div class="tw-flex">
         <div
-            class="tw-overflow-hidden tw-fixed md:tw-static tw-top-0 tw-left-0 tw-z-[10000] tw-w-full md:tw-w-2/5 xl:tw-w-1/5 tw-bg-neutral tw-text-white tw-h-screen tw-py-12 tw-duration-200 tw-flex tw-flex-col tw-items-center md:tw-items-start"
+            class="tw-overflow-hidden tw-fixed md:tw-static tw-top-0 tw-left-0 tw-z-[10000] tw-w-full md:tw-w-2/5 xl:tw-w-1/6 tw-bg-neutral tw-text-white tw-h-screen tw-py-12 tw-duration-200 tw-flex tw-flex-col tw-items-center md:tw-items-start"
             :class="[showMenu ? showMenuClassName : '']"
         >
             <NuxtLink to="/">
@@ -42,12 +42,18 @@
                     title="Evaluaciones"
                     iconName="heroicons-outline:building-library"
                 />
+                <PanelSideBarLink
+                    @click="toggleShowMenu"
+                    to="/admin/papers"
+                    title="Publicaciones"
+                    iconName="heroicons-outline:building-library"
+                />
             </div>
             <div class="tw-h-[10%]" :click="logout">
                 <PanelSideBarLink to="/login" title="Logout" iconName="heroicons-outline:arrow-right-on-rectangle" />
             </div>
         </div>
-        <div class="tw-w-full md:tw-w-4/5 tw-h-screen tw-overflow-x-hidden tw-overflow-y-auto">
+        <div class="tw-w-full md:tw-w-4/5 xl:tw-w-5/6 tw-h-screen tw-overflow-x-hidden tw-overflow-y-auto">
             <PanelHeader />
             <main class="tw-pt-14">
                 <slot />
