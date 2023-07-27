@@ -36,7 +36,8 @@
                     iconName="heroicons-outline:building-library"
                 />
             </div>
-            <div class="tw-h-[10%]" :click="logout">
+            <div class="tw-h-[10%] tw-flex tw-flex-col gap-4" :click="logout">
+                <PanelSideBarLink to="/admin" title="Admin" iconName="heroicons-outline:arrow-right-on-rectangle" />
                 <PanelSideBarLink to="/login" title="Logout" iconName="heroicons-outline:arrow-right-on-rectangle" />
             </div>
         </div>
