@@ -11,6 +11,11 @@
     * {
         @apply tw-text-sm md:tw-text-base;
     }
+
+    html,
+    base {
+        @apply tw-bg-neutral/10;
+    }
 }
 
 @layer components {

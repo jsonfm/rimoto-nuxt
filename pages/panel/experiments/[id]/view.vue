@@ -1,11 +1,13 @@
 <template>
     <section>
         <div class="tw-min-h-screen"></div>
-        <div class="tw-flex tw-flex-col tw-gap-4 tw-fixed tw-bottom-12 tw-right-4 tw-w-16 tw-border">
+        <div class="tw-flex tw-flex-col tw-gap-4 tw-fixed tw-bottom-16 tw-right-4">
             <NuxtLink :to="experimentURL">
-                <Button :circle="true">V</Button>
+                <button class="tw-btn tw-btn-primary tw-btn-circle tw-btn-outline">
+                    <Icon name="heroicons-outline:home" />
+                </button>
             </NuxtLink>
-            <Button> [] </Button>
+            <!-- <button class="tw-btn tw-btn-primary tw-btn-circle">[]</button> -->
         </div>
     </section>
 </template>

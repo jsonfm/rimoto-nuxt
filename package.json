@@ -17,5 +17,8 @@
     "daisyui": "^3.4.0",
     "nuxt": "^3.6.5",
     "nuxt-icon": "^0.4.2"
+  },
+  "dependencies": {
+    "vue-cal": "^4.8.1"
   }
 }

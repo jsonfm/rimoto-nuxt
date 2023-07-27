@@ -7,8 +7,8 @@
                         <LabExperiment />
                     </template>
                 </div>
-                <div class="tw-w-full md:tw-w-1/4">
-                    <div class="tw-w-32 tw-h-32 tw-card tw-drop-shadow-xl">hi</div>
+                <div class="tw-w-full md:tw-w-1/4 tw-px-4 tw-border-l">
+                    <div>hello</div>
                 </div>
             </div>
         </div>

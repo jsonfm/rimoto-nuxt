@@ -5,20 +5,21 @@
                 <div class="tw-w-full md:tw-w-1/2 md:tw-px-12">
                     <div class="md:tw-pt-10">
                         <h4 class="text-2xl tw-font-bold tw-uppercase">hello</h4>
-                        <p class="tw-text-justify">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias delectus voluptatum quam.
-                            Expedita illo voluptates tenetur, dolorem ipsam tempore velit ipsum cupiditate aperiam
-                            repellendus nesciunt, quod assumenda repellat ducimus nam.
+                        <p class="tw-text-justify tw-max-h-[200px] tw-overflow-y-auto">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         </p>
                     </div>
                     <div>
                         <span className="tw-badge tw-badge-primary">Badge</span>
                     </div>
-                    <div class="tw-mt-4">
+                    <div class="tw-mt-4 tw-flex tw-items-center tw-gap-4">
                         <NuxtLink :to="experimentURL">
                             <div class="tw-w-48">
                                 <Button>Ingresar</Button>
                             </div>
+                        </NuxtLink>
+                        <NuxtLink to="/panel/experiments">
+                            <Button variant="secondary">Volver</Button>
                         </NuxtLink>
                     </div>
                 </div>
@@ -31,6 +32,9 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="tw-container tw-mt-32 tw-w-full">
+            <Calendar />
         </div>
     </section>
 </template>
