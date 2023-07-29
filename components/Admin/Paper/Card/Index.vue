@@ -7,8 +7,15 @@
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, ea consequuntur. Quae nisi, esse veritatis
             quidem impedit fuga aperiam accusantium!
         </p>
-        <div class="tw-flex tw-justify-center">
+        <NuxtLink
+            :to="paperURL"
+            class="tw-flex tw-justify-center hover:tw-text-primary tw-cursor-pointer tw-duration-200"
+        >
             <p class="">Read More >></p>
-        </div>
+        </NuxtLink>
     </div>
 </template>
+
+<script setup lang="ts">
+const paperURL = "/admin/papers/1/view";
+</script>

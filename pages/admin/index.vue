@@ -1,7 +1,7 @@
 <template>
     <section>
         <div class="tw-container">
-            <div class="tw-w-full tw-flex tw-justify-between">
+            <div class="tw-w-full tw-flex tw-justify-between tw-flex-wrap tw-gap-4">
                 <AdminCardKPI variant="primary" :loading="true" />
                 <AdminCardKPI variant="secondary" :loading="true" />
                 <AdminCardKPI variant="white" :loading="true" />

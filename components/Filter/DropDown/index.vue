@@ -8,6 +8,6 @@
 
 <script setup lang="ts">
 const { iconName = "material-symbols:date-range-rounded" } = defineProps<{
-    iconName: string;
+    iconName?: string;
 }>();
 </script>
