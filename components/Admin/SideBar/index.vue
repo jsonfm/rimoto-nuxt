@@ -34,19 +34,19 @@
                     @click="toggleShowMenu"
                     to="/admin/experiments"
                     title="Experimentos"
-                    iconName="heroicons-outline:building-library"
+                    iconName="mdi:microscope"
                 />
                 <PanelSideBarLink
                     @click="toggleShowMenu"
                     to="/admin/exams"
                     title="Evaluaciones"
-                    iconName="heroicons-outline:building-library"
+                    iconName="fluent:quiz-new-48-filled"
                 />
                 <PanelSideBarLink
                     @click="toggleShowMenu"
                     to="/admin/papers"
                     title="Publicaciones"
-                    iconName="heroicons-outline:building-library"
+                    iconName="material-symbols:lab-profile"
                 />
             </div>
             <div class="tw-h-[10%]" :click="logout">

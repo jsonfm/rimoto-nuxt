@@ -21,7 +21,7 @@
                     @click="toggleShowMenu"
                     to="/panel/experiments"
                     title="Experimentos"
-                    iconName="heroicons-outline:user"
+                    iconName="mdi:microscope"
                 />
                 <PanelSideBarLink
                     @click="toggleShowMenu"
