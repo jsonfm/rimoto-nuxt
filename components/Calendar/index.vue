@@ -1,7 +1,7 @@
 <template>
     <div class="tw-h-[400px]">
         <VueCal
-            class="vuecal--rounded-theme vuecal--green-theme"
+            class="vuecal--rounded-theme vuecal--orange-theme"
             active-view="month"
             :disable-views="['years', 'year', 'week']"
         />

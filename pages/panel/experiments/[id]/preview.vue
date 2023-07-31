@@ -6,7 +6,8 @@
                     <div class="md:tw-pt-10">
                         <h4 class="text-2xl tw-font-bold tw-uppercase">hello</h4>
                         <p class="tw-text-justify tw-max-h-[200px] tw-overflow-y-auto">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptatibus facere
+                            laboriosam magni distinctio. Eaque, ea perspiciatis. Dolore, itaque asperiores.
                         </p>
                     </div>
                     <div>

@@ -1,6 +1,6 @@
 <template>
-    <header class="tw-z-[1000]">
-        <div class="tw-navbar tw-bg-base-100 tw-container">
+    <header class="tw-z-[1000] tw-full">
+        <div class="tw-navbar tw-container">
             <div class="tw-flex-1">
                 <!-- <div>
                     <input type="search" />

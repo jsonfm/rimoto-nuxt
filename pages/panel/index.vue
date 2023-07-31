@@ -1,9 +1,7 @@
 <template>
     <section>
         <div class="tw-container">
-            <div>
-                <h4 class="tw-font-semibold tw-text-xl">Bienvenido</h4>
-            </div>
+            <div></div>
         </div>
     </section>
 </template>

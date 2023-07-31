@@ -41,7 +41,9 @@
                 <PanelSideBarLink to="/login" title="Logout" iconName="heroicons-outline:arrow-right-on-rectangle" />
             </div>
         </div>
-        <div class="tw-w-full md:tw-w-4/5 xl:tw-w-5/6 tw-h-screen tw-overflow-x-hidden tw-overflow-y-auto">
+        <div
+            class="tw-w-full md:tw-w-4/5 xl:tw-w-5/6 tw-h-screen tw-overflow-x-hidden tw-overflow-y-auto tw-bg-neutral/10"
+        >
             <PanelHeader />
             <main class="tw-py-12">
                 <slot />
