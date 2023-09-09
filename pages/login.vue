@@ -15,12 +15,10 @@
                 <img src="/images/logos/logo-white-negative.png" class="tw-h-20 tw-mb-10 md:tw-hidden" alt="logo" />
             </NuxtLink>
 
-            <form class="tw-flex tw-flex-col tw-gap-5 tw-max-w-[300px]">
-                <FormInput label="Email" type="email" placeholder="example@email.com" />
-                <FormInput label="Password" type="password" placeholder="****" />
-                <NuxtLink class="tw-mt-6" to="/panel">
-                    <Button> Login </Button>
-                </NuxtLink>
+            <form @submit.prevent="submit" class="tw-flex tw-flex-col tw-gap-5 tw-max-w-[300px]">
+                <FormInput v-model="email" label="Email" type="email" placeholder="example@email.com" />
+                <FormInput v-model="password" label="Password" type="password" placeholder="****" />
+                <Button type="submit" :loading="loading"> Login </Button>
             </form>
             <div class="tw-mt-16">
                 <NuxtLink to="/password/reset"> Forgot your password? </NuxtLink>
@@ -28,3 +26,25 @@
         </div>
     </section>
 </template>
+
+<script setup lang="ts">
+import { usersService } from "@/services/users";
+import { ref } from "vue";
+
+const email = ref("");
+const password = ref("");
+const loading = ref(false);
+
+//
+const submit = async () => {
+    loading.value = true;
+    try {
+        // await usersService.login(email.value, password.value);
+        console.log("email: ", email.value, password.value);
+    } catch (error) {
+        console.error(error);
+    }
+
+    loading.value = false;
+};
+</script>

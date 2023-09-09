@@ -4,10 +4,9 @@
             <div class="tw-flex tw-flex-col md:tw-flex-row tw-gap-4">
                 <div class="tw-w-full md:tw-w-1/2 md:tw-px-12">
                     <div class="md:tw-pt-10">
-                        <h4 class="text-2xl tw-font-bold tw-uppercase">hello</h4>
+                        <h4 class="text-2xl tw-font-bold tw-uppercase">{{ data?.name }}</h4>
                         <p class="tw-text-justify tw-max-h-[200px] tw-overflow-y-auto">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptatibus facere
-                            laboriosam magni distinctio. Eaque, ea perspiciatis. Dolore, itaque asperiores.
+                            {{ data?.description }}
                         </p>
                     </div>
                     <div>
@@ -26,10 +25,7 @@
                 </div>
                 <div class="tw-w-full md:tw-w-1/2">
                     <div class="tw-h-64 md:tw-h-96 tw-card tw-overflow-hidden tw-drop-shadow-lg">
-                        <img
-                            src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80"
-                            class="tw-w-full tw-h-full tw-object-cover"
-                        />
+                        <img :src="data?.image_url" class="tw-w-full tw-h-full tw-object-cover" />
                     </div>
                 </div>
             </div>
@@ -41,7 +37,9 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from "vue";
-
-const experimentURL = `/panel/experiments/1/view`;
+import { useGetExperiment } from "@/hooks/experiments";
+const route = useRoute();
+const experimentId = route?.params?.id as string;
+const { pending, data, error } = await useGetExperiment(experimentId);
+const experimentURL = `/panel/experiments/${experimentId}/view`;
 </script>
